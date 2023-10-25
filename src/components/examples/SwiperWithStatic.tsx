@@ -63,19 +63,15 @@ const ShapeOne = ({ item }: { item?: { id: number; storyImg: string } }) => {
 
 const SwiperWithStatic = () => {
   return (
-    <div className="w-full">
-      <SwiperCarousel
-        item={staticData}
-        navigation
-        slidesPerView={5}
-        spaceBetween={2}
-        direction="horizontal"
-        // swiperContainerClass="!w-[100%]"
-        // swiperSlideClass="!w-full"
-      >
-        <ShapeOne />
-      </SwiperCarousel>
-    </div>
+    <SwiperCarousel
+      item={staticData}
+      navigation
+      slidesPerView={5}
+      spaceBetween={2}
+      direction="horizontal"
+    >
+      <ShapeOne />
+    </SwiperCarousel>
   );
 };
 

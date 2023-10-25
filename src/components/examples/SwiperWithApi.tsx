@@ -44,19 +44,15 @@ const SwiperWithApi = () => {
   }, []);
 
   return (
-    <div className="w-full">
-      <SwiperCarousel
-        item={data}
-        navigation
-        slidesPerView={5}
-        spaceBetween={2}
-        direction="horizontal"
-        // swiperContainerClass="!w-[100%]"
-        // swiperSlideClass="!w-full"
-      >
-        <ShapeOne />
-      </SwiperCarousel>
-    </div>
+    <SwiperCarousel
+      item={data}
+      navigation
+      slidesPerView={5}
+      spaceBetween={2}
+      direction="horizontal"
+    >
+      <ShapeOne />
+    </SwiperCarousel>
   );
 };
 
