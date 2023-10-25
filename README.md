@@ -25,7 +25,7 @@
 `Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to fix , so now dont be sad this component is your ideal soluation with your slider game .
 
 <p align="center">
-  <img width="700" align="center" src="https://s6.gifyu.com/images/S8zTr.gif" alt="demo"/>
+  <img width="700" align="center" src="https://pouch.jumpshare.com/preview/Ll_yxQQsIPFttYiBwsj7XjzCJtJR1PT8_8EkuCnxQiTexw6Ml5wnVpdxLYe6imadw8_Xpys3LqoledrdpjjKqzEssFA7hOaPTDluikt5iqs" alt="demo"/>
 </p>
 
 <!-- ## ✨ Demo
