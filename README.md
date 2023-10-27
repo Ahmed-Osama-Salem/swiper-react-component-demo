@@ -38,7 +38,6 @@
 - [Example](#example)
 - [Usage](#usage)
 - [Props](#props)
-- [Data Helpers](#data-helper-functions)
 - [Browser Compatibility](#browser-compatibility)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
@@ -116,6 +115,16 @@ export default SwiperPagination;
 
 <!--This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].-->
 <!--<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>-->
+
+## Browser Compatibility
+
+| Browser | Works? |
+| :------ | :----- |
+| Chrome  | Yes    |
+| Firefox | Yes    |
+| Safari  | Yes    |
+| IE 11   | Yes    |
+
 
 ## 🤝 Contributing
 
