@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { SwiperCarousel } from "@ahmed-osama-salem/swiper-react-component";
+interface ShapOneProps {
+  item?: { id: number };
+}
 
-const ShapeOne = ({ item }: { item?: { id: number } }) => {
+// THIS IS YOUR SWIPERSLIDE COMPONENT THAT AUTOMATICALLY READ EVERY OBJECT OF YOUR DATA AS item prop
+// YOU CAN CUSTOMIZE YOUR OWN
+const ShapeOne = (props: ShapOneProps) => {
   return (
     <div className="flex h-[250px] w-[100%] items-center justify-center bg-stone-300 rounded-lg ">
-      {item?.id}
+      {props.item?.id}
     </div>
   );
 };
