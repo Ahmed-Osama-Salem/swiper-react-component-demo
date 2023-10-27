@@ -98,6 +98,7 @@ const SwiperPagination = () => {
         item={data}
         slidesPerView={1}
         pagination
+        navigation
         spaceBetween={2}
         direction="horizontal"
         swiperContainerClass="w-[80%]"
@@ -110,6 +111,21 @@ const SwiperPagination = () => {
 
 export default SwiperPagination;
 ```
+
+## Props
+
+| Prop                          |           Type            | <div style="width: 400px;">Description</div>                                                                                         |
+| :---------------------------- | :-----------------------: | :----------------------------------------------------------------------------------------------------------------------------------- |
+| item<br/>_(required)_         |         object[]          | slides data with the following keys: <div>`id` is the primary **Example**: `[{id: 1, anything: 'sub'}, { id: 2, anything: "sub 2"}]` |
+| children<br/>_(required)_     | ReactElement<{ item: T }> | your component that will render every object in your data in a single slide of swiper that accept any shape of data.                 |
+| direction<br/>_(recommended)_ |          string           | by default is horizontal <div>`"horizontal" or "vertical"`</div>                                                                     |
+| slidesPerView                 |          number           | number of how may slide show per view of swiper<br/> by default is `4`                                                               |
+| spaceBetween                  |          number           | number of gaps between slides<br/> by default is `30`                                                                                |
+| pagination                    |          boolean          | `true` if you want to add pagination                                                                                                 |
+| navigation                    |          boolean          | `true` if you want to add navigation                                                                                                 |
+| swiperContainerClass          |          string           | class of main swiper container accept any css class ,tailwind or bootstrap classes                                                   |
+| swiperSlideClass              |          string           | class of swiper slides accept any css class ,tailwind or bootstrap classes.                                                          |
+| swiperProps                   |       SwiperOptions       | this prop catches any option or props in swiper lib and give you many option to handle your swiper .                                 |
 
 <!--## Code Contributors-->
 
@@ -124,7 +140,6 @@ export default SwiperPagination;
 | Firefox | Yes    |
 | Safari  | Yes    |
 | IE 11   | Yes    |
-
 
 ## 🤝 Contributing
 
