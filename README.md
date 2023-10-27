@@ -154,7 +154,6 @@ Feel free to check [issues page](https://github.com/Ahmed-Osama-Salem/swiper-rea
 - Linkedin: [@AhmedOsama](https://www.linkedin.com/in/ahmed-osama-083602243/)
 - Github: [Ahmed Osama](https://github.com/Ahmed-Osama-Salem)
 
-<img src="https://avatars.githubusercontent.com/u/97908950?v=4" alt="Ahmed Osama's Photo" style="border-radius: 50%; width: 100px; height: 100px;">
 
 ## Show your support
 
