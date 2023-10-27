@@ -8,7 +8,7 @@ import SwiperDefualt from "@/components/examples/SwiperDefualt";
 import SwiperDynamicPagination from "@/components/examples/SwiperDynamicPagination";
 import SwiperPagination from "@/components/examples/SwiperPagination";
 import SwiperPaginationProgress from "@/components/examples/SwiperPaginationProgress";
-import SwiperVertical from "@/components/examples/SwiperScrollBar";
+import SwiperVertical from "@/components/examples/SwiperVertical";
 import SwiperWithApi from "@/components/examples/SwiperWithApi";
 import SwiperWithStatic from "@/components/examples/SwiperWithStatic";
 import "swiper/css";

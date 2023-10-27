@@ -62,6 +62,8 @@ You can find [swiper-react-component examples here](https://github.com/Ahmed-Osa
 
 ## 🚀 Usage
 
+> your first swiper component
+
 ```jsx
 import { SwiperCarousel } from "@ahmed-osama-salem/swiper-react-component";
 
@@ -112,6 +114,83 @@ const SwiperPagination = () => {
 export default SwiperPagination;
 ```
 
+> swiper component can easy handle api data by passing your api data state
+
+```jsx
+import { SwiperCarousel } from "@ahmed-osama-salem/swiper-react-component";
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const ShapeOne = ({
+  item,
+}: {
+  item?: { id: number, urls: { raw: string } },
+}) => {
+  return (
+    <div className="flex h-[250px] w-[250px] items-center justify-center bg-stone-300 rounded-full">
+      <img
+        alt="image"
+        src={item?.urls.raw}
+        className=" rounded-full object-cover w-full h-full"
+      />
+    </div>
+  );
+};
+
+const SwiperWithApi = () => {
+  const [data, setData] = useState([]);
+
+  const getRandomData = async () => {
+    const res = await axios
+      .get(
+        "https://api.unsplash.com/photos/?client_id=9dfwtUcXdaD9C3I6HXgAq-3R4Ceyry8mv9ryFvd54dA"
+      )
+      .then((data) => {
+        setData(data.data);
+      })
+      .catch((err) => {
+        return err;
+      });
+
+    return res;
+  };
+
+  useEffect(() => {
+    getRandomData();
+  }, []);
+
+  return (
+    <SwiperCarousel
+      item={data}
+      navigation
+      slidesPerView={5}
+      spaceBetween={2}
+      direction="horizontal"
+    >
+      <ShapeOne />
+    </SwiperCarousel>
+  );
+};
+
+export default SwiperWithApi;
+```
+
+> `swiperProps` can provide any props from swiper lib from one prop
+
+```jsx
+<SwiperCarousel
+  item={data}
+  slidesPerView={1}
+  pagination
+  spaceBetween={2}
+  direction="horizontal"
+  swiperContainerClass="w-[80%]"
+  swiperProps={{ pagination: { type: "progressbar" } }} // HERE
+>
+  <ShapeOne />
+</SwiperCarousel>
+```
+
 ## Props
 
 | Prop                          |           Type            | <div style="width: 400px;">Description</div>                                                                                         |
@@ -153,7 +232,6 @@ Feel free to check [issues page](https://github.com/Ahmed-Osama-Salem/swiper-rea
 
 - Linkedin: [@AhmedOsama](https://www.linkedin.com/in/ahmed-osama-083602243/)
 - Github: [Ahmed Osama](https://github.com/Ahmed-Osama-Salem)
-
 
 ## Show your support
 
