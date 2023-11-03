@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ahmed-osama-salem/swiper-react-component": "^1.2.6",
+    "@ahmed-osama-salem/swiper-react-component": "^1.2.8",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
     "@types/react-dom": "18.2.6",

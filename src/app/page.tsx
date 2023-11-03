@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import SwiperAutoPerView from "@/components/examples/SwiperAutoPerView";
@@ -11,7 +10,6 @@ import SwiperPaginationProgress from "@/components/examples/SwiperPaginationProg
 import SwiperVertical from "@/components/examples/SwiperVertical";
 import SwiperWithApi from "@/components/examples/SwiperWithApi";
 import SwiperWithStatic from "@/components/examples/SwiperWithStatic";
-import "swiper/css";
 
 export default function Home() {
   return (
