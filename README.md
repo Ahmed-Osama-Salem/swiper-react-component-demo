@@ -7,7 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Github](https://img.shields.io/twitter/follow/ahmedosama.svg?style=social)](https://github.com/Ahmed-Osama-Salem)
 
-> `Swiper React Component` Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
+> Swiper React Component Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
 
 ## ✨ Demo
 
